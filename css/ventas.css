@@ -1,0 +1,65 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#tienda {
+    margin: -9px;
+    padding: 40px;
+}
+
+.agregar-btn {
+    width: 50%;
+    border-radius: 4px;
+    padding: 1px;
+}
+
+.venta {
+    color: #fff;
+    padding: 5px;
+    font-size: 1.5rem;
+}
+
+#motosBusso {
+    width: 350px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #0A3143;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+#productos {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#carrito {
+    border: 1px solid #000000;
+    margin-top: 20px;
+    padding: 20px;
+    color: #fff;
+}
+
+#vaciar-carrito {
+    width: 10%;
+    border-radius: 4px;
+}
+
+#carrito h2 {
+    margin-bottom: 10px;
+}

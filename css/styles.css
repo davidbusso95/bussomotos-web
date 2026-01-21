@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,700;0,900;1,300&display=swap');
+
+:root {
+  --color-primary: #276E90;
+  --color-complementario: #CECFC9;
+  --color-oscuro: #0A3143;
+  --color-claro: #EFEFEF;
+}
+
+* {
+  font-family: 'Merriweather', serif, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* header */
+header {
+  width: 100%;
+}
+
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: var(--color-claro);
+  margin: 0;
+}
+
+.logo {
+  width: 120px;
+}
+
+.llamanos{
+  font-family: Arial, Helvetica, sans-serif;
+  padding-right: 3%;
+  padding-top: 1%;
+}
+
+/* barra de navegacion */
+.navbar {
+  background-color: var(--color-oscuro);
+  color: white;
+  padding: 10px 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0 auto;
+}
+
+.nav-links li {
+  margin-right: 20px;
+  font-size: 1.2rem;
+  border-right: 2px solid white;
+  width: 170px;
+}
+.nav-links li:first-child {
+  border-left: 2px solid white;
+  padding-left: 17px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu-btn {
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+/* imagen principàl */
+.imagen {
+  background-image: url(../images/Concesionaria/Stock.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -17px;
+}
+
+.texto {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: #5e5a5a;
+  opacity: 80%;
+  color: white;
+  position: relative;
+  top: 80%;
+  text-align: center;
+}
+
+/* section destacados */
+main {
+  background: var(--color-primary);
+  margin-top: -30px;
+}
+
+.destacados h2 {
+  font-size: 5rem;
+  text-align: center;
+  padding: 10px;
+  color: white;
+  margin-bottom: 38px;
+  margin-top: 30px;
+}
+
+.listMoto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.moto {
+  background: #fff;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.moto:hover {
+  transform: translateY(-5px);
+}
+
+.moto img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+
+.boton {
+  font-size: 1.5rem;
+  display: block;
+  margin: 0 auto;
+  margin-top: 70px;
+  border-radius: 10px;
+  padding: 1.1%;
+  border: none;
+}
+.boton a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+/* financiacion */
+.images-financiacion {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.circle {
+  width: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid black;
+}
+
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* contacto */
+#contacto {
+  color: white;
+}
+.opacidad {
+  text-align: center;
+  opacity: 50%;
+  font-size: 1.2rem;
+  margin-top: -20px;
+  margin-bottom: 50px;
+}
+
+.iconos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon i {
+  font-size: 50px;
+  text-align: center;
+}
+
+.texto-contacto {
+  font-size: 1.5rem;
+}
+
+.mapa {
+  display: flex;
+  justify-content: center;
+  padding-top: 90px;
+  height: 80vh;
+  padding-bottom: 40%;
+}
+
+/* footer */
+footer {
+  background-color: var(--color-oscuro);
+  color: white;
+  font-size: 1.2rem;
+  text-align: center;
+  border-top: 1px solid white;
+}
+
+.copyright {
+  margin-top: 20px;
+}
+
+.social-media i {
+  font-size: 30px;
+  color: white;
+  margin-left: 20px;
+}
+
+.requisitos {
+  max-width: 600px;
+  max-height: 504px;
+}
+
+/* ocultar texto del enlace */
+.texto-ocultar {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+  .nav-links li {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    border-right: 2px solid white;
+    width: 160px;
+  }
+
+  .images-financiacion{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 30px;
+    place-items: center;
+  }
+
+  .iconos{
+    display: none;
+  }
+
+  .imagen {
+    height: 80vh;
+  }
+
+  .texto {
+    top: 75%;
+  }
+
+  .subtitulo {
+    font-size: 1.5rem;
+  }
+
+  .destacados h2 {
+    font-size: 3rem;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .opacidad {
+    display: none;
+  }
+
+  .mapa {
+    padding: 5px;
+    width: 700px;
+    margin: 0 auto;
+    height: 600px;
+  }
+
+}
+
+/* MOVILES EN VERTICAL
+-------------------------------------------------------- */
+@media (max-width: 768px) { 
+
+  .nav-links{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    width: 40%;
+    background: #444;
+    align-items: center;
+  }
+
+  .nav-links.active{
+    display: flex;
+  }
+
+  .nav-links li{
+    margin: 0;
+    border: none;
+  }
+
+  .nav-links li:first-child {
+    border-left: none;
+    padding-left: 0px;
+  }
+
+  .menu-btn{
+    display: block;
+    margin-left: 8%;
+  }
+
+  .llamanos{
+    font-size: 0.8rem;
+    font-weight: bold;
+  }
+
+  .imagen {
+    height: 50vh;
+  }
+  
+  .texto {
+    position: relative;
+    top: 70%;
+    width: 75%;
+  }
+
+  .subtitulo{
+    font-size: 0.8rem;
+  }
+
+  .destacados h2{
+    font-size: 3rem;
+    padding-top: 30px;
+  }
+
+  .images-financiacion{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 10px;
+    place-items: center;
+  }
+
+  .circle {
+    width: 150px;
+  }
+
+  .boton {
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+  
+
+  .opacidad, .iconos{
+    display: none;
+  }
+
+  .gps {
+    margin: 0 auto;
+    height: 50vh;
+    margin-top: -50px;
+  }
+
+  .mapa {
+    height: 50vh;
+  }
+
+  .img-form{
+    flex-direction: column;
+  }
+
+  .soloDni{
+    margin: auto;
+  }
+
+}
+
+
+@media (max-width: 683px) { 
+  .gps {
+    width: 350px;
+    margin: 0 auto;
+    height: 40vh;
+    margin-top: -100px;
+  }
+
+  .imagen {
+    height: 50vh;
+  }
+  
+  .texto {
+    position: relative;
+    top: 70%;
+    width: 75%;
+  }
+
+  .destacados h2{
+    font-size: 3rem;
+    padding-top: 30px;
+  }
+
+}
+
